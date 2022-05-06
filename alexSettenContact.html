@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title></title>
+    <link href="styles/AlexSettenStyle.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+    <script defer src="Scripts/LevelDesign.js"></script>
+    <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!--Test to seee if JavaScript is working
+    <p class='jstest'></p>
+    -->
+
+    <div class="navigationBorder">
+        <nav>
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="gameDesign.html">Game Design</a></li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="contactImage">
+        <h1 class="homepageHeader">Get in touch!</h1>
+    </div>
+
+
+    <div class="row">
+        <form class="contactForm" action="https://formspree.io/f/xdobpjjz" method="post">
+            <label for="name">Name*</label>
+            <input type="text" name="name" class="name" id="name" required />
+            <label for="surname">Surname*</label>
+            <input type="text" name="surname" class="surname" id="surname" required /><br>
+            <label for="email">Email*</label>
+            <input type="text" name="email" class="email" id="email" required /><br>
+            <label for="subject">Subject*</label>
+            <input type="text" name="subject" class="subject" id="subject" required /><br>
+            <label for="subject">Message*</label>
+            <textarea class="MessageInput" type="text" name="message" class="message" id="message"
+                required></textarea><br>
+            <div class="status"></div>
+            <button class="submitButton">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
