@@ -1,8 +1,4 @@
-// Test to see if the JS is working
-//$('.jstest').html('JavaScript is working');
-
-
-// Contact form JS, used in cinjunction with 'Formspree' to recieve contact requests
+// Contact form JS, used in conjunction with 'Formspree' to recieve contact requests
 
 $(document).ready(function () {
   $('.submitButton').click(function (event) {
