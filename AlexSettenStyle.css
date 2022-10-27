@@ -1,63 +1,13 @@
-/* Genereal rules applicable to all pages*/
-
-body {
-    font-family: 'Zen Antique', serif;
-    color: black;
-}
-
-a:visited:hover {
-    color: black;
-}
-
-a:visited {
-    color: #778899;
-}
-
-a {
-    text-decoration: none;
-    color: #778899;
-}
-
-nav li {
-    display: inline;
-    position: relative;
-    top: 20px;
-    left: -10px;
-    padding-left: 20px;
-    font-size: 130%;
-    margin-top: 40px;
-
-}
-
-.nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
-
-
-
-
 /* Mobile and smaller screen styling*/
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
 
     body nav li {
-        font-size: 250%;
+        font-size: 200%;    
     }
 
-    body .navigationBorder {
-        margin-bottom: 5vw;
-    }
-
-    body .homePageImage {
-        background-position: center;
-        background-position: 120% 30%;
-        height: 30vw;
+    body .text {
+        font-size: 200%;
     }
 
     body .sanctuaryImage img {
@@ -90,34 +40,6 @@ nav li {
         height: auto;
     }
 
-    body .homepageText {
-        text-align: center;
-        margin-bottom: 30px;
-        margin-top: 75px;
-        font-size: 200%;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-bottom: 15vw;
-    }
-
-    body .gameDesignImage {
-        background-position: center;
-        background-position: 115% 37%;
-        height: 30vw;
-    }
-
-    body .contactImage {
-        position: relative;
-        background-size: 60%;
-        background-position: center;
-        background-position: 130% 40%;
-        height: 30vw;
-        width: 100%;
-        margin-right: 0px;
-        overflow-x: hidden;
-        margin-bottom: 100px;
-    }
-
     body input[type="text"] {
         font-size: 200%;
         margin: 0em 0em 2em;
@@ -127,30 +49,11 @@ nav li {
         font-size: 220%;
     }
 
-    body .SubmitButton {
-        font-size: 220%;
+    body .submitButton {
+        font-size: 250%;
         padding: 20px 30px 20px 30px;
         margin-top: 100px;
         margin-bottom: 130px;
-    }
-
-    body .thankYouHeader {
-        visibility: hidden;
-
-    }
-
-    body .thankYouImage {
-        background-image: url("../Media/gameboy4Mobile.png");
-        margin-top: 10vw;
-        position: relative;
-        background-size: 80%;
-        background-position: center;
-        background-position: 50% 8%;
-        height: 100vw;
-        width: 100%;
-        margin-right: 0px;
-        overflow-x: hidden;
-        overflow-y: hidden;
     }
 
     body .homepageHeader {
@@ -161,6 +64,41 @@ nav li {
 }
 
 
+
+
+
+/* General rules applicable to all pages*/
+
+body {
+    font-family: 'Zen Antique', serif;
+    color: black;
+}
+
+a:visited:hover {
+    color: black;
+}
+
+a:visited {
+    color: #778899;
+}
+
+a {
+    text-decoration: none;
+    color: #778899;
+}
+
+nav {
+    align-items: center;  
+    margin-left: 1.5%;
+    width: 100%;
+}
+
+nav li {
+    display: inline;
+    font-size: 130%;
+    padding-right: 0.75rem;
+   
+}
 
 
 
@@ -176,25 +114,26 @@ nav li {
     left: -0px;
     top: 10px;
     background-image: url("../Media/LevelDesignTop.JPG");
-    background-size: 60%;
-    Height: 400px;
-    background-position: 660px -150px;
+    background-size: 55%;
+    Height: 350px;
+    background-position: right;
     background-repeat: no-repeat;
     object-fit: cover;
     color: white;
     margin-bottom: 75px;
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .homepageHeader {
     font-size: 300%;
     color: black;
-    position: relative;
-    left: 50px;
-    top: 100px;
+    text-align: left;
+    margin-left: 4%;
 }
 
-.homepageText {
+.text {
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
@@ -274,7 +213,6 @@ nav li {
 
 
 
-
 /* Game Design page styling */
 
 .gameDesignImage {
@@ -283,14 +221,16 @@ nav li {
     left: -0px;
     top: 10px;
     background-image: url("../Media/GameDesign.png");
-    background-size: 50%;
-    Height: 400px;
-    background-position: 760px -175px;
+    background-size: 55%;
+    Height: 350px;
+    background-position: right;
     background-repeat: no-repeat;
     object-fit: cover;
     color: white;
     margin-bottom: 100px;
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .gameDesignVideo video {
@@ -313,8 +253,6 @@ nav li {
 
 
 
-
-
 /*Contact page*/
 
 .contactImage {
@@ -322,15 +260,17 @@ nav li {
     left: 0px;
     top: 10px;
     background-image: url("../Media/Laptop.png");
-    background-size: 60%;
+    background-size: 50%;
     width: 100%;
-    Height: 400px;
-    background-position: 660px -160px;
+    Height: 350px;
+    background-position: right;
     background-repeat: no-repeat;
     object-fit: cover;
     color: white;
     margin-bottom: 200px;
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -372,51 +312,4 @@ textarea {
     padding: 15px 25px 15px 25px;
     margin-top: 100px;
     margin-bottom: 130px;
-}
-
-
-
-
-
-
-
-
-/* Thank you page, currently not being used because of the use of 'Formspree' */
-
-.thankYouHeader {
-    font-size: 300%;
-    color: black;
-    position: relative;
-    left: 50px;
-    top: 100px;
-}
-
-.thankYouImage {
-    margin-top: 100px;
-    position: relative;
-    left: 0px;
-    top: 10px;
-    background-image: url("../Media/gameboy.png");
-    background-size: 30%;
-    width: 100%;
-    Height: 400px;
-    background-position: 1000px -130px;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    color: white;
-
-}
-
-footer {
-    text-align: center;
-    width: 100%;
-    background-image: url("../Media/FooterImage.jpg");
-    background-color: #E6E6FA;
-    background-position: -15px -200px;
-    background-repeat: no-repeat;
-    background-size: 130%;
-    Height: 150px;
-    padding-top: 20px;
-    font-size: 130%;
-    margin-top: 150px;
 }
